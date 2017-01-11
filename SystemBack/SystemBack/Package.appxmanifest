@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="493d80cc-4030-4bc5-8b69-ae44a1fe9fb5" Publisher="CN=Greg" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="493d80cc-4030-4bc5-8b69-ae44a1fe9fb5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>SystemBack</DisplayName>
+    <PublisherDisplayName>Greg</PublisherDisplayName>
+    <Logo>Assets\storelogo-sdk.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="SystemBack.App">
+      <uap:VisualElements DisplayName="Greg SystemBack C# sample" Square150x150Logo="Assets\squaretile-sdk.png" Square44x44Logo="Assets\SmallTile-sdk.png" Description="Greg SystemBack C# sample" BackgroundColor="#00b2f0">
+        <uap:DefaultTile ShortName="SystemBack">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\splash-sdk.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
